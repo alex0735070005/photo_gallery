@@ -1,0 +1,48 @@
+#images-block {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+    box-shadow: 0 0 3px 2px #0000008f;
+    margin-top: 30px;
+    padding: 15px;
+    min-height: 1600px;
+    position: relative;
+}
+
+.loading::before {
+    content: "Loading...";
+    position: absolute;
+    background: #dddddded;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 5;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+#images-block img {
+   margin: 15px;
+   border: 2px solid #000;
+}
+
+#nav {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav button, select, input {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#nav input {
+    max-width: 50px;
+    text-align: center;
+}
